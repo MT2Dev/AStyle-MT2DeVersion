@@ -1,6 +1,0 @@
-
-Ýlgili klasörün içinde iki dosyayý "AStyle.bat ve AStyle.exe" src içindeki ayný klasöre atýp AStyle.bat dosyasýna çift týklayýn, iþlem tamam.
-
-
-
-Hazýrlayan: MT2Dev - 2023

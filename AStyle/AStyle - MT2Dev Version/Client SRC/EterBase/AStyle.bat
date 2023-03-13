@@ -1,7 +1,26 @@
 @echo off
 astyle -A1 -T -C -S -N -xW -xw -xg -xd -H -U -k1 -y -xb -j -xy -n -v cipher.cpp cipher.h CPostIt.cpp CPostIt.h CRC32.cpp CRC32.h Debug.cpp Debug.h error.cpp error.h FileBase.cpp FileBase.h FileDir.cpp FileDir.h FileLoader.cpp FileLoader.h Filename.h lzo.cpp lzo.h MappedFile.cpp MappedFile.h Random.cpp Random.h Singleton.h Stl.cpp Stl.h tea.cpp tea.h TempFile.cpp TempFile.h Timer.cpp Timer.h Utils.cpp Utils.h vk.h
 
-REM                             HANGI FLAG NE ISE YARAR ?                             (Hazirlayan; MT2Dev - 2023)
+REM    ENG LANG                    ALL FLAGS (with info)                             (MT2Dev - 2023)
+REM   -A1 = Change coding style with Eric Allman's coding style "Allman Style" (Info; https://en.wikipedia.org/wiki/Indentation_style#Allman_style)
+REM   -T  = Make all spaces to TAB in fonctions.
+REM   -C  = Edits all spaces in classes. (like Allman Style)
+REM   -S  = Edits all spaces in switch's. (like Allman Style)
+REM   -N  = Edits all spaces in NameSpace's. (like Allman Style)
+REM   -xW = Edits all spaces in long ifdef/endif blocks. (like Allman Style)
+REM   -xw = Aligns ifdef sections with codes.
+REM   -xg = Leaves a space after the comma.
+REM   -xd = It leaves a space before the first parenthesis at the end of the code.
+REM   -H  = It leaves a space between the headers and the code start.
+REM   -U  = Deletes unnecessary spaces after or before the end of the parenthesis.
+REM   -y  = Moves the else sections within the condition to a new line.
+REM   -xb = Headers used on the same line are expanded and moved to a lower line.
+REM   -j  = If there is no after header, it adds braces. (Braces = {})
+REM   -xy = Changes "> >" in the template to ">>". (ATTENTION!: C++11 or higher is required for this operation!)
+REM   -n  = It ensures that the backups of the edited files are not taken, you can remove this flag if you want to have a backup.
+REM   -v  = Debug mode. (for extra logs)
+REM    /***********************************************************************************************************/
+REM    TR LANG                    HANGI FLAG NE ISE YARAR ?                             (Hazirlayan; MT2Dev - 2023)
 REM   -A1 = Eric Allman'in kodlama stili olan "Allman Style" (Bilgi; https://en.wikipedia.org/wiki/Indentation_style#Allman_style)
 REM   -T  = Fonsiyon icerisinde gereken tum bosluklari TAB kullanarak ayarlar.
 REM   -C  = Classlar icerisindeki bosluklari ayarlar. (Allman stiline uygun sekilde.)
@@ -13,7 +32,6 @@ REM   -xg = Virgul sonrasinda bir bosluk birakir.
 REM   -xd = Kodun bitimindeki ilk parantezin öncesine bir bosluk birakir.
 REM   -H  = Headerlar ile kod baslangici arasina bir bosluk birakir.
 REM   -U  = Parantez sonrasi veya bitiminin oncesi gereksiz bosluklari siler.
-REM   -k1 = Operator referanslarini sol tarafa sabitler. (*, & vs.)
 REM   -y  = Kosul icerisindeki else bolumlerini yeni bir satira tasir.
 REM   -xb = Ayni satirda kullanilan headerlar genisletilerek bir alt satira tasinir.
 REM   -j  = Header sonrasi eger yok ise braces ekler. (Braces = {})
